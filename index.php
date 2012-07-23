@@ -191,6 +191,9 @@ if (defined('development'))
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
 
+	
+
+	
 /*CSS, JS AND IMAGE PATH*/	
 define('STATIC_DOMAIN', 'http://www.emockstudies.com/');	
 define('STATIC_IMAGE_DOMAIN', 'http://www.emockstudies.com/');	
@@ -203,6 +206,8 @@ define('STATIC_IMAGE_DOMAIN', 'http://www.emockstudies.com/');
  *
  */
 require_once BASEPATH.'core/CodeIgniter.php';
+
+require_once APPPATH.'controllers/controller.php';
 
 /* End of file index.php */
 /* Location: ./index.php */

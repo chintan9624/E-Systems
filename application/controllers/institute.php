@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Institute extends CI_Controller {
+require_once APPPATH.'controllers/controller.php';
+
+class Institute extends Controller {
 	
 	public $templateView = 'institute/template';
  	 

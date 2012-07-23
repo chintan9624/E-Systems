@@ -2,22 +2,22 @@
 
 $leftmenu []  =array(
 "title"=>"Batch", 
-"link"=> "/institute/batches",
+"link"=> "#/institute/batches",
 		
 		
 "submenu"=>array(
-		array('title'=> 'Create Batch', 'link'=>'/institute/batch/create'),
-		array('title'=> 'List Batch', 'link'=>'/institute/batches')
+		array('title'=> 'Create Batch', 'link'=>'#/institute/batch/create'),
+		array('title'=> 'List Batch', 'link'=>'#/institute/batches')
 		));
 
 $leftmenu []  =array(
 		"title"=>"Student",
-		"link"=> '/institute/student',
+		"link"=> '#/institute/student',
 
 
 		"submenu"=>array(
-				array('title'=> 'Create Student', 'link'=>'/institute/student/create'),
-				array('title'=> 'List Student', 'link'=>'/institute/student')
+				array('title'=> 'Create Student', 'link'=>'#/institute/student/create'),
+				array('title'=> 'List Student', 'link'=>'#/institute/student')
 		));
 
 
@@ -32,7 +32,7 @@ $leftmenu []  =array(
 <?php 
 
 foreach($leftmenu as $cat=>$subcat){
-	echo '<div class="left_navi_links"><a href="'.$subcat['link'].'">'.$subcat['title'].'</a></div>';
+	echo '<div class="left_navi_links" id="leftnavwrapper"><a href="'.$subcat['link'].'">'.$subcat['title'].'</a></div>';
  	foreach($subcat["submenu"] as $name){
 		echo '<div class="lmlinks"><a href="'.$name['link'].'">'.$name['title'].'</a></div>';
 	}
@@ -43,5 +43,16 @@ foreach($leftmenu as $cat=>$subcat){
 ?>
 
 </div>
+<script type="text/javascript">
+$(window).bind('hashchange', loadAjax);
 
+/*$("#leftnavwrapper a, .lmlinks a").each(
+		function(){
+			
+			$(this).bind('click', loadAjax);
+			}
+		);
+
+		*/
+</script>
 <!-- LEFT MENU ENDS HERE -->

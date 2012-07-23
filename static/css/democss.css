@@ -90,7 +90,7 @@ ul,ul.li {
 .left_menu {
 	border: 6px solid #787878;
 	/*border-top: 0px;*/
-	width: 13%;
+	width: 12%;
 	float: left;
 	background-image: url("/static/images/left_navigation_bg.gif");
 	height: 100%
@@ -169,13 +169,20 @@ ul,ul.li {
 	width: 100%;
 }
 
-.content {
-	float: left;
-	width: 84%;
-	padding-left: 20px;
-	border: 5px solid #909090;
+.contentOuter {
+	border-bottom: 5px solid #909090;
+	border-right: 0 none;
 	border-top: 5px solid #909090;
+	float: left;
+	left: 13%;
 	padding: 0;
+	position: absolute;
+	width: 87%;
+}
+
+
+.contentInner{
+	width: 100%;
 }
 
 .heading_bar {
@@ -190,4 +197,29 @@ ul,ul.li {
 	font-size: 11px;
 	height: 30px;
 	padding-left: 10px;
+}
+
+/***************************************** DYNAMIC TR ROLLOVER EFFECT START *****************************/
+.normal {
+	
+}
+
+.highlight {
+	background-color: #FFFFCC
+}
+
+.normal_white {
+	background-color: #ffffff;
+}
+
+.highlight_white {
+	background-color: #FFFFCC;
+}
+
+.setting_title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 22px;
 }
